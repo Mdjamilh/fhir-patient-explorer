@@ -9,6 +9,14 @@
     <meta name="description" content="Browse patient records from any FHIR R4 server." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FHIR Patient Explorer</title>
+    <script>
+      // Apply the saved or system theme before first paint to avoid a flash.
+      try {
+        const saved = localStorage.getItem("fhir-explorer:theme");
+        document.documentElement.dataset.theme =
+          saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      } catch {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
