@@ -26,6 +26,25 @@ export function useTheme() {
   return { theme, toggle: () => setTheme((t) => (t === "dark" ? "light" : "dark")) };
 }
 
+const SEARCH_KEY = "fhir-explorer:last-search";
+
+/** Remembers the search filters so "Back to search" returns to the same results. */
+export function rememberSearch(search: string) {
+  try {
+    sessionStorage.setItem(SEARCH_KEY, search);
+  } catch {
+    // Ignore.
+  }
+}
+
+export function lastSearch(): string {
+  try {
+    return sessionStorage.getItem(SEARCH_KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
 /** Sets the document title while a page is shown. */
 export function useDocumentTitle(title: string | undefined) {
   useEffect(() => {

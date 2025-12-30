@@ -1,12 +1,12 @@
 import type { Patient } from "fhir/r4";
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { Link, useSearchParams } from "react-router";
 
 import { Empty, ErrorState, Loading } from "../components/States";
 import { usePatientSearch, type PatientQuery } from "../data/queries";
 import { linkOf, resourcesOf } from "../fhir/client";
 import { capitalize, formatAddress, formatDate, formatNameSortable, medicalRecordNumber, patientAge } from "../fhir/format";
-import { useDocumentTitle } from "../hooks";
+import { rememberSearch, useDocumentTitle } from "../hooks";
 import styles from "./SearchPage.module.css";
 
 const FIELDS = ["name", "birthdate", "gender", "identifier"] as const;
@@ -42,6 +42,8 @@ export function SearchPage() {
     }
     setParams(next);
   };
+
+  useEffect(() => rememberSearch(params.size ? `?${params}` : ""), [params]);
 
   const patients = resourcesOf<Patient>(data, "Patient");
   const next = linkOf(data, "next");
