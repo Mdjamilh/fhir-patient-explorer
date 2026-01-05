@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   ageInYears,
+  axisDate,
   codeableText,
   codeKey,
   formatAddress,
@@ -57,6 +58,13 @@ describe("addresses and codes", () => {
     expect(formatQuantity({ value: 1234.5, unit: "mL" })).toBe("1,235 mL");
     expect(formatQuantity({ value: 5, comparator: "<" })).toBe("<5");
     expect(formatQuantity(undefined)).toBe("—");
+    expect(formatQuantity({ value: 120, unit: "mm[Hg]" })).toBe("120 mmHg");
+  });
+
+  it("labels chart axes without ambiguous two-digit years", () => {
+    const t = Date.UTC(2012, 1, 12);
+    expect(axisDate(t, 10 * 365 * 24 * 3600_000)).toBe("2012");
+    expect(axisDate(t, 90 * 24 * 3600_000)).toBe("Feb 2012");
   });
 });
 

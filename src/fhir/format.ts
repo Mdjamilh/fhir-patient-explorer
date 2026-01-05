@@ -54,11 +54,31 @@ export function codeKey(concept: CodeableConcept | undefined): string {
   return coding ? `${coding.system ?? ""}|${coding.code ?? ""}` : `text|${concept?.text ?? ""}`;
 }
 
-const UCUM_DISPLAY: Record<string, string> = { "[lb_av]": "lb", "[in_i]": "in", "/min": "/min", "kg/m2": "kg/m²", Cel: "°C" };
+const UCUM_DISPLAY: Record<string, string> = {
+  "[lb_av]": "lb",
+  "[in_i]": "in",
+  "kg/m2": "kg/m²",
+  Cel: "°C",
+  "[degF]": "°F",
+  "mm[Hg]": "mmHg",
+  "{beats}/min": "bpm",
+  "{breaths}/min": "/min",
+};
 
 export function formatUnit(q: Quantity | undefined): string {
   const unit = q?.unit ?? q?.code ?? "";
   return UCUM_DISPLAY[unit] ?? unit;
+}
+
+/**
+ * Axis label for a timestamp, as precise as the chart's span needs: years
+ * for long histories, month and year otherwise. Never a bare two-digit
+ * year, which reads like a day ("Feb 12").
+ */
+export function axisDate(t: number, spanMs: number): string {
+  const date = new Date(t);
+  if (spanMs > 3 * 365 * 24 * 3600_000) return String(date.getUTCFullYear());
+  return date.toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
 }
 
 /** Rounds to a sensible precision for display without losing small lab values. */
