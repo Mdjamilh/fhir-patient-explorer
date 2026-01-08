@@ -11,8 +11,8 @@
 }
 
 .banner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 20px;
   align-items: center;
   padding: 20px 24px;
