@@ -57,7 +57,8 @@ function usePatientResources<T extends FhirResource>(type: T["resourceType"], pa
   const { client } = useServer();
   return useQuery({
     queryKey: [client.baseUrl, type, "patient", patientId, params],
-    queryFn: ({ signal }) => searchAll<T>(client, type, { patient: patientId, _count: 100, ...params }, { max, signal }),
+    // Large pages mean fewer round trips; servers cap _count themselves (HAPI at 250).
+    queryFn: ({ signal }) => searchAll<T>(client, type, { patient: patientId, _count: 250, ...params }, { max, signal }),
     staleTime: 5 * 60_000,
   });
 }
