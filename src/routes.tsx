@@ -6,6 +6,7 @@ import { LabsTab } from "./pages/patient/LabsTab";
 import { ImmunizationsTab } from "./pages/patient/ImmunizationsTab";
 import { MedicationsTab } from "./pages/patient/MedicationsTab";
 import { PatientLayout } from "./pages/patient/PatientLayout";
+import { VisitsTab } from "./pages/patient/VisitsTab";
 import { SearchPage } from "./pages/SearchPage";
 
 export const routes: RouteObject[] = [
@@ -20,6 +21,7 @@ export const routes: RouteObject[] = [
           { path: "labs", element: <LabsTab /> },
           { path: "conditions", element: <ConditionsTab /> },
           { path: "medications", element: <MedicationsTab /> },
+          { path: "visits", element: <VisitsTab /> },
           { path: "immunizations", element: <ImmunizationsTab /> },
         ],
       },

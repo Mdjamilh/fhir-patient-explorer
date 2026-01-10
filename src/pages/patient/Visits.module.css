@@ -1,0 +1,82 @@
+.year {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.year:not(:first-child) {
+  margin-top: 24px;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--border);
+  list-style: none;
+}
+
+.entry {
+  position: relative;
+  padding: 10px 0 10px 12px;
+}
+
+.entry::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -27px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.entry[data-kind="procedure"]::before {
+  background: var(--warn);
+}
+
+.entry[data-class="Emergency"]::before,
+.entry[data-class="Inpatient"]::before {
+  background: var(--danger);
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.detail {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
