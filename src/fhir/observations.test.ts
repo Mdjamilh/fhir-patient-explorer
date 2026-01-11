@@ -1,7 +1,7 @@
 import type { Observation } from "fhir/r4";
 import { describe, expect, it } from "vitest";
 
-import { flagFor, latestCoded, toSeries, trend } from "./observations";
+import { flagFor, latestCoded, latestVitals, socialHistory, toSeries, trend } from "./observations";
 
 const LOINC = "http://loinc.org";
 const lab = (code: string, display: string, value: number, date: string, extra: Partial<Observation> = {}): Observation => ({
@@ -109,5 +109,41 @@ describe("latestCoded", () => {
     expect(latestCoded([smoking("Former smoker", "2024-01-01"), smoking("Never smoker", "2020-01-01")])).toEqual([
       { name: "Tobacco smoking status", value: "Former smoker", date: "2024-01-01" },
     ]);
+  });
+});
+
+describe("latestVitals", () => {
+  it("combines blood pressure and picks common vitals by LOINC code", () => {
+    const vital = (code: string, display: string, value: number, unit: string, extra: Partial<Observation> = {}) =>
+      lab(code, display, value, "2024-05-01", { valueQuantity: { value, unit }, ...extra });
+    const tiles = latestVitals(
+      toSeries([
+        vital("8480-6", "Systolic", 142, "mm[Hg]", { interpretation: [{ coding: [{ code: "H" }] }] }),
+        vital("8462-4", "Diastolic", 88.4, "mm[Hg]"),
+        vital("8867-4", "Heart rate", 72, "/min"),
+        vital("39156-5", "BMI", 27.41, "kg/m2"),
+        vital("2339-0", "Glucose", 99, "mg/dL"),
+      ]),
+    );
+    expect(tiles.map((t) => [t.label, t.value, t.flag])).toEqual([
+      ["Blood pressure", "142/88", "high"],
+      ["Heart rate", "72", undefined],
+      ["BMI", "27.41", undefined],
+    ]);
+  });
+});
+
+describe("socialHistory", () => {
+  it("finds smoking status even when it is filed as a survey", () => {
+    const smoking: Observation = {
+      resourceType: "Observation",
+      status: "final",
+      category: [{ coding: [{ code: "survey" }] }],
+      code: { coding: [{ system: LOINC, code: "72166-2", display: "Tobacco smoking status" }] },
+      effectiveDateTime: "2024-01-01",
+      valueCodeableConcept: { text: "Never smoker" },
+    };
+    const otherSurvey: Observation = { ...smoking, code: { coding: [{ system: LOINC, code: "99999-9", display: "Other" }] } };
+    expect(socialHistory([smoking, otherSurvey]).map((o) => o.value)).toEqual(["Never smoker"]);
   });
 });

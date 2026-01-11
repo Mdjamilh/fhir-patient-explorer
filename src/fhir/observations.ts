@@ -132,3 +132,49 @@ export function latestCoded(observations: Observation[]): { name: string; value:
   }
   return [...seen.values()];
 }
+
+const LOINC = "http://loinc.org";
+
+/** Common vital signs by LOINC code, in the order a clinician scans them. */
+const VITALS: { label: string; codes: string[] }[] = [
+  { label: "Heart rate", codes: ["8867-4"] },
+  { label: "Respiratory rate", codes: ["9279-1"] },
+  { label: "Temperature", codes: ["8310-5", "8331-1"] },
+  { label: "Oxygen saturation", codes: ["59408-5", "2708-6"] },
+  { label: "Weight", codes: ["29463-7"] },
+  { label: "BMI", codes: ["39156-5"] },
+];
+
+export type VitalTile = { label: string; value: string; unit: string; date: string; flag?: Flag };
+
+/** The latest reading of each common vital sign; systolic and diastolic become one blood pressure tile. */
+export function latestVitals(series: Series[], format: (n: number) => string = String): VitalTile[] {
+  const byCode = new Map(series.map((s) => [s.key, s]));
+  const find = (codes: string[]) => codes.map((c) => byCode.get(`${LOINC}|${c}`)).find(Boolean);
+  const tiles: VitalTile[] = [];
+
+  const sys = find(["8480-6"]);
+  const dia = find(["8462-4"]);
+  if (sys && dia) {
+    const worst = [sys.latest.flag, dia.latest.flag].find((f) => f && f !== "normal");
+    // Blood pressure is always read in whole mmHg.
+    const bp = `${Math.round(sys.latest.value)}/${Math.round(dia.latest.value)}`;
+    tiles.push({ label: "Blood pressure", value: bp, unit: "mmHg", date: sys.latest.date, flag: worst });
+  }
+  for (const vital of VITALS) {
+    const s = find(vital.codes);
+    if (s) tiles.push({ label: vital.label, value: format(s.latest.value), unit: s.latest.unit, date: s.latest.date, flag: s.latest.flag });
+  }
+  return tiles;
+}
+
+/** US Core smoking status codes; some servers file them under "survey" rather than "social-history". */
+const SOCIAL_CODES = new Set([`${LOINC}|72166-2`, `${LOINC}|11367-0`]);
+
+export function socialHistory(observations: Observation[]) {
+  return latestCoded(
+    observations.filter(
+      (o) => SOCIAL_CODES.has(codeKey(o.code)) || o.category?.some((c) => c.coding?.some((x) => x.code === "social-history")),
+    ),
+  );
+}
