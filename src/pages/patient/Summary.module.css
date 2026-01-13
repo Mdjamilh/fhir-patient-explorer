@@ -1,0 +1,77 @@
+.card {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cardTitle a {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.vitals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.vital {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.vitalLabel {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.vitalValue {
+  margin-top: 2px;
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.vitalUnit {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.none {
+  color: var(--muted);
+}
