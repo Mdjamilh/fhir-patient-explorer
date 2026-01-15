@@ -1,0 +1,55 @@
+.wrap {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.pre {
+  max-height: 560px;
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  font: 13px/1.6 var(--mono);
+  tab-size: 2;
+}
+
+.key {
+  color: var(--accent);
+}
+
+.string {
+  color: #1a7f37;
+}
+
+.number {
+  color: #9a6700;
+}
+
+.literal {
+  color: #8250df;
+}
+
+:root[data-theme="dark"] .string {
+  color: #7ee787;
+}
+
+:root[data-theme="dark"] .number {
+  color: #e3b341;
+}
+
+:root[data-theme="dark"] .literal {
+  color: #d2a8ff;
+}
+
+.copy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-2);
+  font-size: 13px;
+  cursor: pointer;
+}
