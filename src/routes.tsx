@@ -6,6 +6,7 @@ import { LabsTab } from "./pages/patient/LabsTab";
 import { ImmunizationsTab } from "./pages/patient/ImmunizationsTab";
 import { MedicationsTab } from "./pages/patient/MedicationsTab";
 import { PatientLayout } from "./pages/patient/PatientLayout";
+import { RawDataTab } from "./pages/patient/RawDataTab";
 import { SummaryTab } from "./pages/patient/SummaryTab";
 import { VisitsTab } from "./pages/patient/VisitsTab";
 import { SearchPage } from "./pages/SearchPage";
@@ -25,6 +26,7 @@ export const routes: RouteObject[] = [
           { path: "medications", element: <MedicationsTab /> },
           { path: "visits", element: <VisitsTab /> },
           { path: "immunizations", element: <ImmunizationsTab /> },
+          { path: "data", element: <RawDataTab /> },
         ],
       },
     ],

@@ -101,3 +101,21 @@
 .muted {
   color: var(--muted);
 }
+
+.action {
+  margin-left: auto;
+  padding: 7px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action:disabled {
+  border-color: var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  cursor: progress;
+}
