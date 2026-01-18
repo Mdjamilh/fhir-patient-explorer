@@ -10,12 +10,14 @@ import { RawDataTab } from "./pages/patient/RawDataTab";
 import { SummaryTab } from "./pages/patient/SummaryTab";
 import { VisitsTab } from "./pages/patient/VisitsTab";
 import { SearchPage } from "./pages/SearchPage";
+import { ServerPage } from "./pages/ServerPage";
 
 export const routes: RouteObject[] = [
   {
     element: <Layout />,
     children: [
       { index: true, element: <SearchPage /> },
+      { path: "server", element: <ServerPage /> },
       {
         path: "patients/:id",
         element: <PatientLayout />,
