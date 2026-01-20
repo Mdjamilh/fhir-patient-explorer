@@ -4,6 +4,7 @@ import { Link, useSearchParams } from "react-router";
 
 import { Empty, ErrorState, Loading } from "../components/States";
 import { usePatientSearch, type PatientQuery } from "../data/queries";
+import { useServer } from "../data/server-context";
 import { linkOf, resourcesOf } from "../fhir/client";
 import { capitalize, formatAddress, formatDate, formatNameSortable, medicalRecordNumber, patientAge } from "../fhir/format";
 import { rememberSearch, useDocumentTitle } from "../hooks";
@@ -27,9 +28,10 @@ export function SearchPage() {
   // Paging links for the pages visited so far (the last one is the current
   // page), tied to the search they belong to so back/forward starts over.
   const [paging, setPaging] = useState<{ search: string; pages: string[] }>({ search: "", pages: [] });
-  const pages = paging.search === params.toString() ? paging.pages : [];
-  const setPages = (update: (pages: string[]) => string[]) =>
-    setPaging({ search: params.toString(), pages: update(pages) });
+  const { client } = useServer();
+  const pagingKey = `${client.baseUrl}?${params}`;
+  const pages = paging.search === pagingKey ? paging.pages : [];
+  const setPages = (update: (pages: string[]) => string[]) => setPaging({ search: pagingKey, pages: update(pages) });
   const { data, error, isPending, isFetching, isPlaceholderData, refetch } = usePatientSearch(query, pages.at(-1));
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
