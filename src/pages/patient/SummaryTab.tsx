@@ -1,5 +1,5 @@
 import type { UseQueryResult } from "@tanstack/react-query";
-import type { ReactNode } from "react";
+import { useId, type ReactNode } from "react";
 import { Link, useParams } from "react-router";
 
 import { Loading } from "../../components/States";
@@ -15,9 +15,10 @@ const LIMIT = 6;
 
 /** A summary card that loads independently, so one slow resource doesn't hold up the rest. */
 function Card<T>({ title, query, link, children }: { title: string; query: UseQueryResult<T>; link?: string; children: (data: T) => ReactNode }) {
+  const headingId = useId();
   return (
-    <section className={s.card} aria-labelledby={`card-${title}`}>
-      <h2 id={`card-${title}`} className={s.cardTitle}>
+    <section className={s.card} aria-labelledby={headingId}>
+      <h2 id={headingId} className={s.cardTitle}>
         {title}
         {link && <Link to={link}>View all</Link>}
       </h2>
