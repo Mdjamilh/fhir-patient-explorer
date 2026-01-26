@@ -1,0 +1,411 @@
+{
+ "resourceType": "Bundle",
+ "type": "searchset",
+ "total": 10,
+ "entry": [
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/3283cb96-6a9c-46d1-baff-ca07eff5bff9",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "3283cb96-6a9c-46d1-baff-ca07eff5bff9",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:11:11.382-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "305428000",
+       "display": "Admission to orthopedic department"
+      }
+     ],
+     "text": "Admission to orthopedic department"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/b2724a4b-e401-46bd-a17a-77bc06c107bc"
+    },
+    "performedPeriod": {
+     "start": "2020-04-11T04:59:42+00:00",
+     "end": "2020-04-11T05:59:42+00:00"
+    },
+    "reasonReference": [
+     {
+      "reference": "Condition/1f3f4844-f0d2-4b8f-ae92-2ef8008b50c4",
+      "display": "Fracture of clavicle"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/d32c6043-529b-4062-8e13-da79f0e4fdff",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "d32c6043-529b-4062-8e13-da79f0e4fdff",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:10:07.825-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "23426006",
+       "display": "Measurement of respiratory function (procedure)"
+      }
+     ],
+     "text": "Measurement of respiratory function (procedure)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/475dd7d3-cd5b-48ef-81a5-ef08ccd79258"
+    },
+    "performedPeriod": {
+     "start": "2013-02-03T04:59:42+00:00",
+     "end": "2013-02-03T05:20:42+00:00"
+    },
+    "reasonReference": [
+     {
+      "reference": "Condition/06b51354-94e8-49b7-9c31-7ad296e8461c",
+      "display": "Acute bronchitis (disorder)"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/b8b9290d-0702-4f8c-bf1d-3d927a257951",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "b8b9290d-0702-4f8c-bf1d-3d927a257951",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:09:59.143-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "168594001",
+       "display": "Clavicle X-ray"
+      }
+     ],
+     "text": "Clavicle X-ray"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/b2724a4b-e401-46bd-a17a-77bc06c107bc"
+    },
+    "performedPeriod": {
+     "start": "2020-04-11T04:59:42+00:00",
+     "end": "2020-04-11T05:29:42+00:00"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/08514254-34d0-4c73-ba78-9a5c23760671",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "08514254-34d0-4c73-ba78-9a5c23760671",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:09:58.370-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "428191000124101",
+       "display": "Documentation of current medications"
+      }
+     ],
+     "text": "Documentation of current medications"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/93530d4a-8b95-4835-bb67-104699db1a0b"
+    },
+    "performedPeriod": {
+     "start": "2012-02-05T04:59:42+00:00",
+     "end": "2012-02-05T05:14:42+00:00"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/a0bb9e8c-a80b-44fa-88f8-d1db19d516c2",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "a0bb9e8c-a80b-44fa-88f8-d1db19d516c2",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:09:07.328-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "312681000",
+       "display": "Bone density scan (procedure)"
+      }
+     ],
+     "text": "Bone density scan (procedure)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/b2724a4b-e401-46bd-a17a-77bc06c107bc"
+    },
+    "performedPeriod": {
+     "start": "2020-04-11T04:59:42+00:00",
+     "end": "2020-04-11T05:14:42+00:00"
+    },
+    "reasonReference": [
+     {
+      "reference": "Condition/1f3f4844-f0d2-4b8f-ae92-2ef8008b50c4",
+      "display": "Fracture of clavicle"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/58113ac4-e4c2-4181-83b9-0d83948ed731",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "58113ac4-e4c2-4181-83b9-0d83948ed731",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:08:05.158-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "73761001",
+       "display": "Colonoscopy"
+      }
+     ],
+     "text": "Colonoscopy"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/4ae21772-fbd3-4a33-8359-9653a0a71550"
+    },
+    "performedPeriod": {
+     "start": "2018-01-08T04:59:42+00:00",
+     "end": "2018-01-08T05:40:42+00:00"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/1368bc00-dbc6-48f3-97e9-3eac0a1dd4dd",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "1368bc00-dbc6-48f3-97e9-3eac0a1dd4dd",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:05:31.788-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "428191000124101",
+       "display": "Documentation of current medications"
+      }
+     ],
+     "text": "Documentation of current medications"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/efff9577-6528-425b-b6fe-ffa8c5afd098"
+    },
+    "performedPeriod": {
+     "start": "2014-02-16T04:59:42+00:00",
+     "end": "2014-02-16T05:14:42+00:00"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/47155dab-9e19-4876-bdd6-ef8daf40312c",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "47155dab-9e19-4876-bdd6-ef8daf40312c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:05:00.034-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "288086009",
+       "display": "Suture open wound"
+      }
+     ],
+     "text": "Suture open wound"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/cd83d250-41e1-4470-abba-ff4359f47e31"
+    },
+    "performedPeriod": {
+     "start": "2015-01-17T04:59:42+00:00",
+     "end": "2015-01-17T05:11:42+00:00"
+    },
+    "reasonReference": [
+     {
+      "reference": "Condition/0b9a10d1-1165-4829-aff6-11b7c92a42f7",
+      "display": "Laceration of thigh"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/179c1c23-5395-484d-bc88-7044f5b8b43c",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "179c1c23-5395-484d-bc88-7044f5b8b43c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:04:58.046-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "73761001",
+       "display": "Colonoscopy"
+      }
+     ],
+     "text": "Colonoscopy"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/6b6d1b3d-307c-41a1-9e88-9eebed483c01"
+    },
+    "performedPeriod": {
+     "start": "2013-01-09T04:59:42+00:00",
+     "end": "2013-01-09T05:25:42+00:00"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Procedure/2d6057d0-dab3-4092-99df-2640d3b0fc9c",
+   "resource": {
+    "resourceType": "Procedure",
+    "id": "2d6057d0-dab3-4092-99df-2640d3b0fc9c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:38.926-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "428191000124101",
+       "display": "Documentation of current medications"
+      }
+     ],
+     "text": "Documentation of current medications"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/6122fe77-3b55-4250-bdb6-b39f2d67851e"
+    },
+    "performedPeriod": {
+     "start": "2015-02-22T04:59:42+00:00",
+     "end": "2015-02-22T05:14:42+00:00"
+    }
+   }
+  }
+ ]
+}

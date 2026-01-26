@@ -1,0 +1,8707 @@
+{
+ "resourceType": "CapabilityStatement",
+ "status": "active",
+ "date": "2026-10-23T02:49:53-04:00",
+ "kind": "instance",
+ "fhirVersion": "4.0.0",
+ "format": [
+  "application/fhir+xml",
+  "application/fhir+json"
+ ],
+ "software": {
+  "name": "Smile CDR",
+  "version": "2019.08.PRE"
+ },
+ "rest": [
+  {
+   "mode": "server",
+   "resource": [
+    {
+     "type": "Account",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "owner",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ActivityDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "AdverseEvent",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "severity",
+       "type": "token"
+      },
+      {
+       "name": "recorder",
+       "type": "reference"
+      },
+      {
+       "name": "study",
+       "type": "reference"
+      },
+      {
+       "name": "actuality",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "resultingcondition",
+       "type": "reference"
+      },
+      {
+       "name": "substance",
+       "type": "reference"
+      },
+      {
+       "name": "seriousness",
+       "type": "token"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "event",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "AllergyIntolerance",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "severity",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "manifestation",
+       "type": "token"
+      },
+      {
+       "name": "recorder",
+       "type": "reference"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "verification-status",
+       "type": "token"
+      },
+      {
+       "name": "criticality",
+       "type": "token"
+      },
+      {
+       "name": "clinical-status",
+       "type": "token"
+      },
+      {
+       "name": "onset",
+       "type": "date"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "asserter",
+       "type": "reference"
+      },
+      {
+       "name": "route",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "last-date",
+       "type": "date"
+      }
+     ]
+    },
+    {
+     "type": "Appointment",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "service-category",
+       "type": "token"
+      },
+      {
+       "name": "practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "appointment-type",
+       "type": "token"
+      },
+      {
+       "name": "part-status",
+       "type": "token"
+      },
+      {
+       "name": "service-type",
+       "type": "token"
+      },
+      {
+       "name": "slot",
+       "type": "reference"
+      },
+      {
+       "name": "reason-code",
+       "type": "token"
+      },
+      {
+       "name": "actor",
+       "type": "reference"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "reason-reference",
+       "type": "reference"
+      },
+      {
+       "name": "supporting-info",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "AppointmentResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "actor",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "part-status",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "appointment",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "AuditEvent",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "entity-type",
+       "type": "token"
+      },
+      {
+       "name": "agent",
+       "type": "reference"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "entity-role",
+       "type": "token"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "altid",
+       "type": "token"
+      },
+      {
+       "name": "site",
+       "type": "token"
+      },
+      {
+       "name": "agent-name",
+       "type": "string"
+      },
+      {
+       "name": "entity-name",
+       "type": "string"
+      },
+      {
+       "name": "subtype",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "action",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "agent-role",
+       "type": "token"
+      },
+      {
+       "name": "entity",
+       "type": "reference"
+      },
+      {
+       "name": "outcome",
+       "type": "token"
+      },
+      {
+       "name": "policy",
+       "type": "uri"
+      }
+     ]
+    },
+    {
+     "type": "Basic",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Binary",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "BiologicallyDerivedProduct",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "BodyStructure",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "morphology",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Bundle",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "composition",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "message",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "timestamp",
+       "type": "date"
+      }
+     ]
+    },
+    {
+     "type": "CapabilityStatement",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "software",
+       "type": "string"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "fhirversion",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "mode",
+       "type": "token"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "guide",
+       "type": "reference"
+      },
+      {
+       "name": "resource-profile",
+       "type": "reference"
+      },
+      {
+       "name": "resource",
+       "type": "token"
+      },
+      {
+       "name": "format",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "supported-profile",
+       "type": "reference"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "security-service",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CarePlan",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "care-team",
+       "type": "reference"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "goal",
+       "type": "reference"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "replaces",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "activity-reference",
+       "type": "reference"
+      },
+      {
+       "name": "condition",
+       "type": "reference"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "activity-date",
+       "type": "date"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "activity-code",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CareTeam",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "participant",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CatalogEntry",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ChargeItem",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "performing-organization",
+       "type": "reference"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "occurrence",
+       "type": "date"
+      },
+      {
+       "name": "entered-date",
+       "type": "date"
+      },
+      {
+       "name": "performer-function",
+       "type": "token"
+      },
+      {
+       "name": "factor-override",
+       "type": "number"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "service",
+       "type": "reference"
+      },
+      {
+       "name": "price-override",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "reference"
+      },
+      {
+       "name": "enterer",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "performer-actor",
+       "type": "reference"
+      },
+      {
+       "name": "account",
+       "type": "reference"
+      },
+      {
+       "name": "requesting-organization",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "ChargeItemDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Claim",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "care-team",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "use",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "payee",
+       "type": "reference"
+      },
+      {
+       "name": "provider",
+       "type": "reference"
+      },
+      {
+       "name": "insurer",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "detail-udi",
+       "type": "reference"
+      },
+      {
+       "name": "enterer",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "procedure-udi",
+       "type": "reference"
+      },
+      {
+       "name": "subdetail-udi",
+       "type": "reference"
+      },
+      {
+       "name": "facility",
+       "type": "reference"
+      },
+      {
+       "name": "item-udi",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ClaimResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "use",
+       "type": "token"
+      },
+      {
+       "name": "payment-date",
+       "type": "date"
+      },
+      {
+       "name": "requestor",
+       "type": "reference"
+      },
+      {
+       "name": "disposition",
+       "type": "string"
+      },
+      {
+       "name": "insurer",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "outcome",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ClinicalImpression",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "previous",
+       "type": "reference"
+      },
+      {
+       "name": "finding-code",
+       "type": "token"
+      },
+      {
+       "name": "assessor",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "finding-ref",
+       "type": "reference"
+      },
+      {
+       "name": "problem",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "supporting-info",
+       "type": "reference"
+      },
+      {
+       "name": "investigation",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CodeSystem",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "content-mode",
+       "type": "token"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "language",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "supplements",
+       "type": "reference"
+      },
+      {
+       "name": "system",
+       "type": "uri"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Communication",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "received",
+       "type": "date"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "medium",
+       "type": "token"
+      },
+      {
+       "name": "sent",
+       "type": "date"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "sender",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "recipient",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CommunicationRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "authored",
+       "type": "date"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "replaces",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "medium",
+       "type": "token"
+      },
+      {
+       "name": "occurrence",
+       "type": "date"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "group-identifier",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "sender",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "recipient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CompartmentDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "resource",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Composition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "related-id",
+       "type": "token"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "confidentiality",
+       "type": "token"
+      },
+      {
+       "name": "section",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "attester",
+       "type": "reference"
+      },
+      {
+       "name": "entry",
+       "type": "reference"
+      },
+      {
+       "name": "related-ref",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ConceptMap",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "other",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "dependson",
+       "type": "uri"
+      },
+      {
+       "name": "target-system",
+       "type": "uri"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "source-uri",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "source-system",
+       "type": "uri"
+      },
+      {
+       "name": "target-code",
+       "type": "token"
+      },
+      {
+       "name": "target-uri",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "product",
+       "type": "uri"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "target",
+       "type": "reference"
+      },
+      {
+       "name": "source-code",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Condition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "evidence-detail",
+       "type": "reference"
+      },
+      {
+       "name": "severity",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "onset-info",
+       "type": "string"
+      },
+      {
+       "name": "recorded-date",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "evidence",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "verification-status",
+       "type": "token"
+      },
+      {
+       "name": "clinical-status",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "onset-date",
+       "type": "date"
+      },
+      {
+       "name": "abatement-date",
+       "type": "date"
+      },
+      {
+       "name": "asserter",
+       "type": "reference"
+      },
+      {
+       "name": "stage",
+       "type": "token"
+      },
+      {
+       "name": "abatement-string",
+       "type": "string"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "abatement-age",
+       "type": "quantity"
+      },
+      {
+       "name": "onset-age",
+       "type": "quantity"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "body-site",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Consent",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "data",
+       "type": "reference"
+      },
+      {
+       "name": "purpose",
+       "type": "token"
+      },
+      {
+       "name": "source-reference",
+       "type": "reference"
+      },
+      {
+       "name": "actor",
+       "type": "reference"
+      },
+      {
+       "name": "security-label",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "scope",
+       "type": "token"
+      },
+      {
+       "name": "action",
+       "type": "token"
+      },
+      {
+       "name": "consentor",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Contract",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "instantiates",
+       "type": "uri"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "authority",
+       "type": "reference"
+      },
+      {
+       "name": "domain",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "issued",
+       "type": "date"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "signer",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Coverage",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "subscriber",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "payor",
+       "type": "reference"
+      },
+      {
+       "name": "beneficiary",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "class-value",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "class-type",
+       "type": "token"
+      },
+      {
+       "name": "dependent",
+       "type": "string"
+      },
+      {
+       "name": "policy-holder",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CoverageEligibilityRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "provider",
+       "type": "reference"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "enterer",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "facility",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "CoverageEligibilityResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "disposition",
+       "type": "string"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "insurer",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "outcome",
+       "type": "token"
+      },
+      {
+       "name": "requestor",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DetectedIssue",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "identified",
+       "type": "date"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "implicated",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Device",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "udi-di",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "udi-carrier",
+       "type": "string"
+      },
+      {
+       "name": "device-name",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "manufacturer",
+       "type": "string"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "model",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DeviceDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "parent",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DeviceMetric",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "parent",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DeviceRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "insurance",
+       "type": "reference"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "event-date",
+       "type": "date"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "authored-on",
+       "type": "date"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "group-identifier",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "device",
+       "type": "reference"
+      },
+      {
+       "name": "prior-request",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DeviceUseStatement",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "device",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "DiagnosticReport",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "media",
+       "type": "reference"
+      },
+      {
+       "name": "conclusion",
+       "type": "token"
+      },
+      {
+       "name": "result",
+       "type": "reference"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "specimen",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "issued",
+       "type": "date"
+      },
+      {
+       "name": "results-interpreter",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DocumentManifest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "item",
+       "type": "reference"
+      },
+      {
+       "name": "related-id",
+       "type": "token"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "source",
+       "type": "uri"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "related-ref",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "recipient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "DocumentReference",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "language",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "relation",
+       "type": "token"
+      },
+      {
+       "name": "setting",
+       "type": "token"
+      },
+      {
+       "name": "related",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "event",
+       "type": "token"
+      },
+      {
+       "name": "relationship",
+       "type": "composite"
+      },
+      {
+       "name": "authenticator",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "custodian",
+       "type": "reference"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "format",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "contenttype",
+       "type": "token"
+      },
+      {
+       "name": "security-label",
+       "type": "token"
+      },
+      {
+       "name": "location",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "relatesto",
+       "type": "reference"
+      },
+      {
+       "name": "facility",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EffectEvidenceSynthesis",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Encounter",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "participant-type",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "appointment",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "participant",
+       "type": "reference"
+      },
+      {
+       "name": "reason-code",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "location-period",
+       "type": "date"
+      },
+      {
+       "name": "special-arrangement",
+       "type": "token"
+      },
+      {
+       "name": "class",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "episode-of-care",
+       "type": "reference"
+      },
+      {
+       "name": "length",
+       "type": "quantity"
+      },
+      {
+       "name": "diagnosis",
+       "type": "reference"
+      },
+      {
+       "name": "reason-reference",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "service-provider",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "account",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Endpoint",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "payload-type",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "connection-type",
+       "type": "token"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EnrollmentRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EnrollmentResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EpisodeOfCare",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "condition",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "care-manager",
+       "type": "reference"
+      },
+      {
+       "name": "incoming-referral",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EventDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Evidence",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "EvidenceVariable",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ExampleScenario",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ExplanationOfBenefit",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "care-team",
+       "type": "reference"
+      },
+      {
+       "name": "coverage",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "payee",
+       "type": "reference"
+      },
+      {
+       "name": "disposition",
+       "type": "string"
+      },
+      {
+       "name": "provider",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "detail-udi",
+       "type": "reference"
+      },
+      {
+       "name": "claim",
+       "type": "reference"
+      },
+      {
+       "name": "enterer",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "procedure-udi",
+       "type": "reference"
+      },
+      {
+       "name": "subdetail-udi",
+       "type": "reference"
+      },
+      {
+       "name": "facility",
+       "type": "reference"
+      },
+      {
+       "name": "item-udi",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "FamilyMemberHistory",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "sex",
+       "type": "token"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "relationship",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Flag",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "Goal",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "lifecycle-status",
+       "type": "token"
+      },
+      {
+       "name": "achievement-status",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "start-date",
+       "type": "date"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "target-date",
+       "type": "date"
+      }
+     ]
+    },
+    {
+     "type": "GraphDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "start",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Group",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "actual",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "characteristic-value",
+       "type": "composite"
+      },
+      {
+       "name": "managing-entity",
+       "type": "reference"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "member",
+       "type": "reference"
+      },
+      {
+       "name": "exclude",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "value",
+       "type": "token"
+      },
+      {
+       "name": "characteristic",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "GuidanceResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "HealthcareService",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "service-category",
+       "type": "token"
+      },
+      {
+       "name": "service-type",
+       "type": "token"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "program",
+       "type": "token"
+      },
+      {
+       "name": "characteristic",
+       "type": "token"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "coverage-area",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ImagingStudy",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "reason",
+       "type": "token"
+      },
+      {
+       "name": "dicom-class",
+       "type": "token"
+      },
+      {
+       "name": "bodysite",
+       "type": "token"
+      },
+      {
+       "name": "instance",
+       "type": "token"
+      },
+      {
+       "name": "modality",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "interpreter",
+       "type": "reference"
+      },
+      {
+       "name": "started",
+       "type": "date"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "referrer",
+       "type": "reference"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "series",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "basedon",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Immunization",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "reaction",
+       "type": "reference"
+      },
+      {
+       "name": "lot-number",
+       "type": "string"
+      },
+      {
+       "name": "status-reason",
+       "type": "token"
+      },
+      {
+       "name": "reason-code",
+       "type": "token"
+      },
+      {
+       "name": "manufacturer",
+       "type": "reference"
+      },
+      {
+       "name": "target-disease",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "series",
+       "type": "string"
+      },
+      {
+       "name": "vaccine-code",
+       "type": "token"
+      },
+      {
+       "name": "reason-reference",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "reaction-date",
+       "type": "date"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ImmunizationEvaluation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "target-disease",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "dose-status",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "immunization-event",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ImmunizationRecommendation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "target-disease",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "vaccine-type",
+       "type": "token"
+      },
+      {
+       "name": "information",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "support",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ImplementationGuide",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "resource",
+       "type": "reference"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "experimental",
+       "type": "token"
+      },
+      {
+       "name": "global",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "InsurancePlan",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "owned-by",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "administered-by",
+       "type": "reference"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Invoice",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "totalgross",
+       "type": "quantity"
+      },
+      {
+       "name": "participant-role",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "issuer",
+       "type": "reference"
+      },
+      {
+       "name": "participant",
+       "type": "reference"
+      },
+      {
+       "name": "totalnet",
+       "type": "quantity"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "recipient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "account",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Library",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "content-type",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Linkage",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "item",
+       "type": "reference"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "List",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "empty-reason",
+       "type": "token"
+      },
+      {
+       "name": "item",
+       "type": "reference"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "notes",
+       "type": "string"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Location",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "partof",
+       "type": "reference"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "operational-status",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "near"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Measure",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MeasureReport",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "measure",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "reporter",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "evaluated-resource",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Media",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "modality",
+       "type": "token"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "operator",
+       "type": "reference"
+      },
+      {
+       "name": "site",
+       "type": "token"
+      },
+      {
+       "name": "view",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "device",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Medication",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "ingredient-code",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "ingredient",
+       "type": "reference"
+      },
+      {
+       "name": "form",
+       "type": "token"
+      },
+      {
+       "name": "lot-number",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "expiration-date",
+       "type": "date"
+      },
+      {
+       "name": "manufacturer",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicationAdministration",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "medication",
+       "type": "reference"
+      },
+      {
+       "name": "reason-given",
+       "type": "token"
+      },
+      {
+       "name": "effective-time",
+       "type": "date"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "reference"
+      },
+      {
+       "name": "reason-not-given",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "device",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicationDispense",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "receiver",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "destination",
+       "type": "reference"
+      },
+      {
+       "name": "medication",
+       "type": "reference"
+      },
+      {
+       "name": "responsibleparty",
+       "type": "reference"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "whenhandedover",
+       "type": "date"
+      },
+      {
+       "name": "whenprepared",
+       "type": "date"
+      },
+      {
+       "name": "prescription",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicationKnowledge",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "ingredient",
+       "type": "reference"
+      },
+      {
+       "name": "doseform",
+       "type": "token"
+      },
+      {
+       "name": "classification-type",
+       "type": "token"
+      },
+      {
+       "name": "monograph-type",
+       "type": "token"
+      },
+      {
+       "name": "classification",
+       "type": "token"
+      },
+      {
+       "name": "manufacturer",
+       "type": "reference"
+      },
+      {
+       "name": "ingredient-code",
+       "type": "token"
+      },
+      {
+       "name": "source-cost",
+       "type": "token"
+      },
+      {
+       "name": "monitoring-program-name",
+       "type": "token"
+      },
+      {
+       "name": "monograph",
+       "type": "reference"
+      },
+      {
+       "name": "monitoring-program-type",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicationRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "intended-dispenser",
+       "type": "reference"
+      },
+      {
+       "name": "authoredon",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "medication",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "intended-performer",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "intended-performertype",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicationStatement",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "medication",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProduct",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "name-language",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductAuthorization",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "country",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "holder",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductContraindication",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductIndication",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductIngredient",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductInteraction",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductManufactured",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductPackaged",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductPharmaceutical",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "route",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "target-species",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MedicinalProductUndesirableEffect",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MessageDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "parent",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "focus",
+       "type": "token"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "event",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MessageHeader",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "receiver",
+       "type": "reference"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "destination",
+       "type": "string"
+      },
+      {
+       "name": "focus",
+       "type": "reference"
+      },
+      {
+       "name": "source",
+       "type": "string"
+      },
+      {
+       "name": "target",
+       "type": "reference"
+      },
+      {
+       "name": "destination-uri",
+       "type": "uri"
+      },
+      {
+       "name": "sender",
+       "type": "reference"
+      },
+      {
+       "name": "source-uri",
+       "type": "uri"
+      },
+      {
+       "name": "responsible",
+       "type": "reference"
+      },
+      {
+       "name": "enterer",
+       "type": "reference"
+      },
+      {
+       "name": "response-id",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "event",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "MolecularSequence",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "referenceseqid-variant-coordinate",
+       "type": "composite"
+      },
+      {
+       "name": "chromosome",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "window-end",
+       "type": "number"
+      },
+      {
+       "name": "window-start",
+       "type": "number"
+      },
+      {
+       "name": "variant-end",
+       "type": "number"
+      },
+      {
+       "name": "chromosome-variant-coordinate",
+       "type": "composite"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "variant-start",
+       "type": "number"
+      },
+      {
+       "name": "chromosome-window-coordinate",
+       "type": "composite"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "referenceseqid-window-coordinate",
+       "type": "composite"
+      },
+      {
+       "name": "referenceseqid",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "NamingSystem",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "kind",
+       "type": "token"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "id-type",
+       "type": "token"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "contact",
+       "type": "string"
+      },
+      {
+       "name": "responsible",
+       "type": "string"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "value",
+       "type": "string"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "NutritionOrder",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "oraldiet",
+       "type": "token"
+      },
+      {
+       "name": "additive",
+       "type": "token"
+      },
+      {
+       "name": "datetime",
+       "type": "date"
+      },
+      {
+       "name": "provider",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "supplement",
+       "type": "token"
+      },
+      {
+       "name": "formula",
+       "type": "token"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Observation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "combo-data-absent-reason",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "combo-code-value-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "component-data-absent-reason",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "value-concept",
+       "type": "token"
+      },
+      {
+       "name": "value-date",
+       "type": "date"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "focus",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "has-member",
+       "type": "reference"
+      },
+      {
+       "name": "code-value-string",
+       "type": "composite"
+      },
+      {
+       "name": "component-code-value-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "code-value-date",
+       "type": "composite"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "specimen",
+       "type": "reference"
+      },
+      {
+       "name": "code-value-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "component-code",
+       "type": "token"
+      },
+      {
+       "name": "combo-code-value-concept",
+       "type": "composite"
+      },
+      {
+       "name": "value-string",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "combo-code",
+       "type": "token"
+      },
+      {
+       "name": "method",
+       "type": "token"
+      },
+      {
+       "name": "value-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "component-value-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "data-absent-reason",
+       "type": "token"
+      },
+      {
+       "name": "combo-value-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "code-value-concept",
+       "type": "composite"
+      },
+      {
+       "name": "component-code-value-concept",
+       "type": "composite"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "component-value-concept",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "device",
+       "type": "reference"
+      },
+      {
+       "name": "combo-value-concept",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ObservationDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "OperationDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "instance",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "kind",
+       "type": "token"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "input-profile",
+       "type": "reference"
+      },
+      {
+       "name": "output-profile",
+       "type": "reference"
+      },
+      {
+       "name": "system",
+       "type": "token"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "base",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "OperationOutcome",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Organization",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "partof",
+       "type": "reference"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      }
+     ]
+    },
+    {
+     "type": "OrganizationAffiliation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "role",
+       "type": "token"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "primary-organization",
+       "type": "reference"
+      },
+      {
+       "name": "network",
+       "type": "reference"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "service",
+       "type": "reference"
+      },
+      {
+       "name": "participating-organization",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Parameters",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Patient",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "birthdate",
+       "type": "date"
+      },
+      {
+       "name": "deceased",
+       "type": "token"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "gender",
+       "type": "token"
+      },
+      {
+       "name": "link",
+       "type": "reference"
+      },
+      {
+       "name": "language",
+       "type": "token"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "death-date",
+       "type": "date"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      },
+      {
+       "name": "given",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "general-practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "family",
+       "type": "string"
+      }
+     ]
+    },
+    {
+     "type": "PaymentNotice",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "provider",
+       "type": "reference"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "response",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "payment-status",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "PaymentReconciliation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "request",
+       "type": "reference"
+      },
+      {
+       "name": "disposition",
+       "type": "string"
+      },
+      {
+       "name": "created",
+       "type": "date"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "outcome",
+       "type": "token"
+      },
+      {
+       "name": "payment-issuer",
+       "type": "reference"
+      },
+      {
+       "name": "requestor",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Person",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "birthdate",
+       "type": "date"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "gender",
+       "type": "token"
+      },
+      {
+       "name": "practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "link",
+       "type": "reference"
+      },
+      {
+       "name": "relatedperson",
+       "type": "reference"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "PlanDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "definition",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Practitioner",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "given",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "gender",
+       "type": "token"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "communication",
+       "type": "token"
+      },
+      {
+       "name": "family",
+       "type": "string"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "PractitionerRole",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "role",
+       "type": "token"
+      },
+      {
+       "name": "practitioner",
+       "type": "reference"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "endpoint",
+       "type": "reference"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "service",
+       "type": "reference"
+      },
+      {
+       "name": "organization",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Procedure",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "reason-code",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "reason-reference",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Provenance",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "agent-type",
+       "type": "token"
+      },
+      {
+       "name": "agent",
+       "type": "reference"
+      },
+      {
+       "name": "signature-type",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "agent-role",
+       "type": "token"
+      },
+      {
+       "name": "recorded",
+       "type": "date"
+      },
+      {
+       "name": "when",
+       "type": "date"
+      },
+      {
+       "name": "entity",
+       "type": "reference"
+      },
+      {
+       "name": "target",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "Questionnaire",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "subject-type",
+       "type": "token"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "definition",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "QuestionnaireResponse",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "authored",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "questionnaire",
+       "type": "reference"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "source",
+       "type": "reference"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "RelatedPerson",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "address",
+       "type": "string"
+      },
+      {
+       "name": "birthdate",
+       "type": "date"
+      },
+      {
+       "name": "address-state",
+       "type": "string"
+      },
+      {
+       "name": "gender",
+       "type": "token"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "address-postalcode",
+       "type": "string"
+      },
+      {
+       "name": "address-country",
+       "type": "string"
+      },
+      {
+       "name": "phonetic",
+       "type": "string"
+      },
+      {
+       "name": "phone",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "address-use",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "telecom",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "address-city",
+       "type": "string"
+      },
+      {
+       "name": "relationship",
+       "type": "token"
+      },
+      {
+       "name": "email",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "RequestGroup",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "authored",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "author",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "participant",
+       "type": "reference"
+      },
+      {
+       "name": "group-identifier",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ResearchDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ResearchElementDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "successor",
+       "type": "reference"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "predecessor",
+       "type": "reference"
+      },
+      {
+       "name": "composed-of",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "depends-on",
+       "type": "reference"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "topic",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ResearchStudy",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "partof",
+       "type": "reference"
+      },
+      {
+       "name": "sponsor",
+       "type": "reference"
+      },
+      {
+       "name": "focus",
+       "type": "token"
+      },
+      {
+       "name": "principalinvestigator",
+       "type": "reference"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "protocol",
+       "type": "reference"
+      },
+      {
+       "name": "site",
+       "type": "reference"
+      },
+      {
+       "name": "location",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "keyword",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ResearchSubject",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "study",
+       "type": "reference"
+      },
+      {
+       "name": "individual",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "RiskAssessment",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "condition",
+       "type": "reference"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "method",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "probability",
+       "type": "number"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "risk",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "RiskEvidenceSynthesis",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "effective",
+       "type": "date"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Schedule",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "actor",
+       "type": "reference"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "service-category",
+       "type": "token"
+      },
+      {
+       "name": "service-type",
+       "type": "token"
+      },
+      {
+       "name": "active",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SearchParameter",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "derived-from",
+       "type": "reference"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "target",
+       "type": "token"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "component",
+       "type": "reference"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "base",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ServiceRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "authored",
+       "type": "date"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "reference"
+      },
+      {
+       "name": "requisition",
+       "type": "token"
+      },
+      {
+       "name": "replaces",
+       "type": "reference"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-canonical",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "occurrence",
+       "type": "date"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "performer-type",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "specimen",
+       "type": "reference"
+      },
+      {
+       "name": "instantiates-uri",
+       "type": "uri"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "body-site",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Slot",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "schedule",
+       "type": "reference"
+      },
+      {
+       "name": "specialty",
+       "type": "token"
+      },
+      {
+       "name": "service-category",
+       "type": "token"
+      },
+      {
+       "name": "appointment-type",
+       "type": "token"
+      },
+      {
+       "name": "service-type",
+       "type": "token"
+      },
+      {
+       "name": "start",
+       "type": "date"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Specimen",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "container",
+       "type": "token"
+      },
+      {
+       "name": "container-id",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "parent",
+       "type": "reference"
+      },
+      {
+       "name": "bodysite",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "collected",
+       "type": "date"
+      },
+      {
+       "name": "accession",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "collector",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SpecimenDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "container",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "StructureDefinition",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "experimental",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "type",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "path",
+       "type": "token"
+      },
+      {
+       "name": "base-path",
+       "type": "token"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "keyword",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "valueset",
+       "type": "reference"
+      },
+      {
+       "name": "kind",
+       "type": "token"
+      },
+      {
+       "name": "abstract",
+       "type": "token"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "ext-context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "derivation",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "base",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "StructureMap",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Subscription",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "payload",
+       "type": "token"
+      },
+      {
+       "name": "criteria",
+       "type": "string"
+      },
+      {
+       "name": "contact",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "type",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Substance",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "container-identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "substance-reference",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "expiry",
+       "type": "date"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstanceNucleicAcid",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstancePolymer",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstanceProtein",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstanceReferenceInformation",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstanceSourceMaterial",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SubstanceSpecification",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SupplyDelivery",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "receiver",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "supplier",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "SupplyRequest",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "supplier",
+       "type": "reference"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "category",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "Task",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "owner",
+       "type": "reference"
+      },
+      {
+       "name": "requester",
+       "type": "reference"
+      },
+      {
+       "name": "business-status",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "period",
+       "type": "date"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "performer",
+       "type": "token"
+      },
+      {
+       "name": "subject",
+       "type": "reference"
+      },
+      {
+       "name": "focus",
+       "type": "reference"
+      },
+      {
+       "name": "part-of",
+       "type": "reference"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "authored-on",
+       "type": "date"
+      },
+      {
+       "name": "priority",
+       "type": "token"
+      },
+      {
+       "name": "intent",
+       "type": "token"
+      },
+      {
+       "name": "group-identifier",
+       "type": "token"
+      },
+      {
+       "name": "based-on",
+       "type": "reference"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "modified",
+       "type": "date"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "TerminologyCapabilities",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "TestReport",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "result",
+       "type": "token"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "tester",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "testscript",
+       "type": "reference"
+      },
+      {
+       "name": "issued",
+       "type": "date"
+      },
+      {
+       "name": "participant",
+       "type": "uri"
+      }
+     ]
+    },
+    {
+     "type": "TestScript",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "testscript-capability",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "ValueSet",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "date",
+       "type": "date"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "code",
+       "type": "token"
+      },
+      {
+       "name": "context-type-value",
+       "type": "composite"
+      },
+      {
+       "name": "jurisdiction",
+       "type": "token"
+      },
+      {
+       "name": "description",
+       "type": "string"
+      },
+      {
+       "name": "context-type",
+       "type": "token"
+      },
+      {
+       "name": "title",
+       "type": "string"
+      },
+      {
+       "name": "version",
+       "type": "token"
+      },
+      {
+       "name": "url",
+       "type": "uri"
+      },
+      {
+       "name": "expansion",
+       "type": "uri"
+      },
+      {
+       "name": "reference",
+       "type": "uri"
+      },
+      {
+       "name": "context-quantity",
+       "type": "quantity"
+      },
+      {
+       "name": "context",
+       "type": "token"
+      },
+      {
+       "name": "name",
+       "type": "string"
+      },
+      {
+       "name": "publisher",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "context-type-quantity",
+       "type": "composite"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    },
+    {
+     "type": "VerificationResult",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "target",
+       "type": "reference"
+      }
+     ]
+    },
+    {
+     "type": "VisionPrescription",
+     "searchParam": [
+      {
+       "name": "_language",
+       "type": "string"
+      },
+      {
+       "name": "prescriber",
+       "type": "reference"
+      },
+      {
+       "name": "identifier",
+       "type": "token"
+      },
+      {
+       "name": "patient",
+       "type": "reference"
+      },
+      {
+       "name": "datewritten",
+       "type": "date"
+      },
+      {
+       "name": "_id",
+       "type": "token"
+      },
+      {
+       "name": "encounter",
+       "type": "reference"
+      },
+      {
+       "name": "status",
+       "type": "token"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

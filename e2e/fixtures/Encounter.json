@@ -1,0 +1,2238 @@
+{
+ "resourceType": "Bundle",
+ "type": "searchset",
+ "total": 39,
+ "entry": [
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/a2fabafe-f708-47a3-a964-8124d428efcc",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "a2fabafe-f708-47a3-a964-8124d428efcc",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:10:31.917-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2011-01-18T04:59:42+00:00",
+     "end": "2011-01-18T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/4ae21772-fbd3-4a33-8359-9653a0a71550",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "4ae21772-fbd3-4a33-8359-9653a0a71550",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:08:05.121-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for 'check-up'"
+       }
+      ],
+      "text": "Encounter for 'check-up'"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2018-01-08T04:59:42+00:00",
+     "end": "2018-01-08T05:55:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/2c53e801-a6ad-4a11-af51-4cd3aacfad96",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "2c53e801-a6ad-4a11-af51-4cd3aacfad96",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:06:48.705-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185345009",
+        "display": "Encounter for symptom"
+       }
+      ],
+      "text": "Encounter for symptom"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2016-12-27T04:59:42+00:00",
+     "end": "2016-12-27T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "444814009",
+        "display": "Viral sinusitis (disorder)"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/acac72f4-5b92-4fa4-8169-bf9e6dcd4319",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "acac72f4-5b92-4fa4-8169-bf9e6dcd4319",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:05:07.922-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2007-01-19T04:59:42+00:00",
+     "end": "2007-01-19T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/6b6d1b3d-307c-41a1-9e88-9eebed483c01",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "6b6d1b3d-307c-41a1-9e88-9eebed483c01",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:04:58.021-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for 'check-up'"
+       }
+      ],
+      "text": "Encounter for 'check-up'"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2013-01-09T04:59:42+00:00",
+     "end": "2013-01-09T05:40:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/f92d351e-b508-4dbe-aed3-21d7ed927c4a",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "f92d351e-b508-4dbe-aed3-21d7ed927c4a",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:46.338-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185345009",
+        "display": "Encounter for symptom"
+       }
+      ],
+      "text": "Encounter for symptom"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2011-10-17T04:59:42+00:00",
+     "end": "2011-10-17T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "444814009",
+        "display": "Viral sinusitis (disorder)"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/475dd7d3-cd5b-48ef-81a5-ef08ccd79258",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "475dd7d3-cd5b-48ef-81a5-ef08ccd79258",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:44.202-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185345009",
+        "display": "Encounter for symptom"
+       }
+      ],
+      "text": "Encounter for symptom"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2013-02-03T04:59:42+00:00",
+     "end": "2013-02-03T05:35:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "10509002",
+        "display": "Acute bronchitis (disorder)"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/4d655b1f-eee3-44d1-9208-5acd6decbd43",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "4d655b1f-eee3-44d1-9208-5acd6decbd43",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:02:11.142-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2006-01-19T04:59:42+00:00",
+     "end": "2006-01-19T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/1858048d-edf7-44fb-996e-1d68390b7259",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "1858048d-edf7-44fb-996e-1d68390b7259",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:01:55.148-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185345009",
+        "display": "Encounter for symptom"
+       }
+      ],
+      "text": "Encounter for symptom"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2015-05-21T04:59:42+00:00",
+     "end": "2015-05-21T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "444814009",
+        "display": "Viral sinusitis (disorder)"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/dd51fdd1-a117-40ce-b9e4-ad3ddd416290",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "dd51fdd1-a117-40ce-b9e4-ad3ddd416290",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:58.642-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "1971-03-07T04:59:42+00:00",
+     "end": "1971-03-07T05:29:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/9a574c8e-92b6-4d6c-b72f-51d1fd94f218",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "9a574c8e-92b6-4d6c-b72f-51d1fd94f218",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:45.987-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2009-01-18T04:59:42+00:00",
+     "end": "2009-01-18T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/713e884c-676e-424b-b393-b0b102c9fc91",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "713e884c-676e-424b-b393-b0b102c9fc91",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:40.106-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for 'check-up'"
+       }
+      ],
+      "text": "Encounter for 'check-up'"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2020-05-11T04:59:42+00:00",
+     "end": "2020-05-11T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "58150001",
+        "display": "Fracture of clavicle"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/416f6da5-858e-410a-a675-0776e19f421b",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "416f6da5-858e-410a-a675-0776e19f421b",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:17.675-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185345009",
+        "display": "Encounter for symptom"
+       }
+      ],
+      "text": "Encounter for symptom"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2011-11-15T04:59:42+00:00",
+     "end": "2011-11-15T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "195662009",
+        "display": "Acute viral pharyngitis (disorder)"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/e24c5e7f-29cf-4009-92dc-8b48853c1587",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "e24c5e7f-29cf-4009-92dc-8b48853c1587",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:53.167-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2008-01-19T04:59:42+00:00",
+     "end": "2008-01-19T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/541c324a-811b-48a1-8f8e-2ec8908ad820",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "541c324a-811b-48a1-8f8e-2ec8908ad820",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:44.373-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2006-01-01T04:59:42+00:00",
+     "end": "2006-01-01T05:29:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/6122fe77-3b55-4250-bdb6-b39f2d67851e",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "6122fe77-3b55-4250-bdb6-b39f2d67851e",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:22.463-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2015-02-22T04:59:42+00:00",
+     "end": "2015-02-22T05:29:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/7b9f0f91-afc4-4d4b-b23c-a56ac37e2b01",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "7b9f0f91-afc4-4d4b-b23c-a56ac37e2b01",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:09.447-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2018-03-11T04:59:42+00:00",
+     "end": "2018-03-11T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/93530d4a-8b95-4835-bb67-104699db1a0b",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "93530d4a-8b95-4835-bb67-104699db1a0b",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:05.948-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2012-02-05T04:59:42+00:00",
+     "end": "2012-02-05T05:29:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/b2724a4b-e401-46bd-a17a-77bc06c107bc",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "b2724a4b-e401-46bd-a17a-77bc06c107bc",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:50.858-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "EMER"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "50849002",
+        "display": "Emergency room admission (procedure)"
+       }
+      ],
+      "text": "Emergency room admission (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2020-04-11T04:59:42+00:00",
+     "end": "2020-04-11T07:44:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/f977bb92-85a9-449d-a6d7-f5265d55108c",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "f977bb92-85a9-449d-a6d7-f5265d55108c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:45.267-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2014-01-17T04:59:42+00:00",
+     "end": "2014-01-17T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/59fd6715-4035-4ff8-839b-df0ba46e40e9",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "59fd6715-4035-4ff8-839b-df0ba46e40e9",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:22.602-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2021-03-28T04:59:42+00:00",
+     "end": "2021-03-28T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/4806a6a1-4423-46ab-b48c-26e204154361",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "4806a6a1-4423-46ab-b48c-26e204154361",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:15.272-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2016-01-17T04:59:42+00:00",
+     "end": "2016-01-17T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/5f33c5e3-8aef-4808-9f9a-57d0a67a9e5d",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "5f33c5e3-8aef-4808-9f9a-57d0a67a9e5d",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:14.967-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2013-02-10T04:59:42+00:00",
+     "end": "2013-02-10T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/ed62f128-4b37-4547-abef-c5957b73094c",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "ed62f128-4b37-4547-abef-c5957b73094c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:12.637-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2017-03-05T04:59:42+00:00",
+     "end": "2017-03-05T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/8f1950d4-13cc-4ea5-a9d0-855a4f4b9180",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "8f1950d4-13cc-4ea5-a9d0-855a4f4b9180",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:09.167-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2021-01-15T04:59:42+00:00",
+     "end": "2021-01-15T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/4fcbbc87-b05e-47d1-8874-fd3c4b5e55ae",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "4fcbbc87-b05e-47d1-8874-fd3c4b5e55ae",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:04.210-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2016-02-28T04:59:42+00:00",
+     "end": "2016-02-28T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/efff9577-6528-425b-b6fe-ffa8c5afd098",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "efff9577-6528-425b-b6fe-ffa8c5afd098",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:01.816-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2014-02-16T04:59:42+00:00",
+     "end": "2014-02-16T05:29:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/e7f73c12-5958-40ae-9760-1f7f57edb1fa",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "e7f73c12-5958-40ae-9760-1f7f57edb1fa",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:53.070-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2012-01-18T04:59:42+00:00",
+     "end": "2012-01-18T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/b7aa9154-34fa-49ca-b5c2-94e5417048f8",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "b7aa9154-34fa-49ca-b5c2-94e5417048f8",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:52.194-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2018-01-16T04:59:42+00:00",
+     "end": "2018-01-16T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/57df0407-ef05-4f5d-beb2-6eb7006aa68b",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "57df0407-ef05-4f5d-beb2-6eb7006aa68b",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:48.696-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2007-01-07T04:59:42+00:00",
+     "end": "2007-01-07T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/79f49467-53f4-4df6-b1cc-816215ac3015",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "79f49467-53f4-4df6-b1cc-816215ac3015",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:40.091-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2010-01-18T04:59:42+00:00",
+     "end": "2010-01-18T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/710d671d-f58e-46bb-b806-0396abd92e34",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "710d671d-f58e-46bb-b806-0396abd92e34",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:39.879-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2020-01-16T04:59:42+00:00",
+     "end": "2020-01-16T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/cd83d250-41e1-4470-abba-ff4359f47e31",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "cd83d250-41e1-4470-abba-ff4359f47e31",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:33.237-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "EMER"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "50849002",
+        "display": "Emergency room admission (procedure)"
+       }
+      ],
+      "text": "Emergency room admission (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2015-01-17T04:59:42+00:00",
+     "end": "2015-01-17T06:11:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/d6adf3b6-fa53-4dda-b304-d3732336bda7",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "d6adf3b6-fa53-4dda-b304-d3732336bda7",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:32.961-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2020-03-22T04:59:42+00:00",
+     "end": "2020-03-22T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/1768823d-26dc-435d-93e9-9050e9aa301a",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "1768823d-26dc-435d-93e9-9050e9aa301a",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:29.989-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2015-01-17T04:59:42+00:00",
+     "end": "2015-01-17T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/2cdf7b22-9fda-40b3-a0ed-4f3bf5c477bf",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "2cdf7b22-9fda-40b3-a0ed-4f3bf5c477bf",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:28.121-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2013-01-17T04:59:42+00:00",
+     "end": "2013-01-17T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/0507c280-d3f0-4fb4-a297-10c38e1b4d56",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "0507c280-d3f0-4fb4-a297-10c38e1b4d56",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:26.647-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2019-01-16T04:59:42+00:00",
+     "end": "2019-01-16T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/b7c1ef29-0f05-4087-a536-2c2ef4b35e40",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "b7c1ef29-0f05-4087-a536-2c2ef4b35e40",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:16.054-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "390906007",
+        "display": "Follow-up encounter"
+       }
+      ],
+      "text": "Follow-up encounter"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2017-01-16T04:59:42+00:00",
+     "end": "2017-01-16T05:14:42+00:00"
+    },
+    "reasonCode": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "55822004",
+        "display": "Hyperlipidemia"
+       }
+      ]
+     }
+    ],
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Encounter/e7b240b4-b86c-4728-8d94-7e8b2b50b3cd",
+   "resource": {
+    "resourceType": "Encounter",
+    "id": "e7b240b4-b86c-4728-8d94-7e8b2b50b3cd",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:00.916-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "finished",
+    "class": {
+     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+     "code": "AMB"
+    },
+    "type": [
+     {
+      "coding": [
+       {
+        "system": "http://snomed.info/sct",
+        "code": "185349003",
+        "display": "Encounter for check up (procedure)"
+       }
+      ],
+      "text": "Encounter for check up (procedure)"
+     }
+    ],
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "participant": [
+     {
+      "individual": {
+       "reference": "Practitioner/96333652-ed28-41d3-bb60-d435f478c8ed"
+      }
+     }
+    ],
+    "period": {
+     "start": "2019-03-17T04:59:42+00:00",
+     "end": "2019-03-17T05:14:42+00:00"
+    },
+    "serviceProvider": {
+     "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93"
+    }
+   }
+  }
+ ]
+}

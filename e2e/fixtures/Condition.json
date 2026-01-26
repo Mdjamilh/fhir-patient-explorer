@@ -1,0 +1,575 @@
+{
+ "resourceType": "Bundle",
+ "type": "searchset",
+ "total": 11,
+ "entry": [
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/95c20d33-5a66-49e8-ad73-fa667326ca4e",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "95c20d33-5a66-49e8-ad73-fa667326ca4e",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:06:48.732-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "444814009",
+       "display": "Viral sinusitis (disorder)"
+      }
+     ],
+     "text": "Viral sinusitis (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/2c53e801-a6ad-4a11-af51-4cd3aacfad96"
+    },
+    "onsetDateTime": "2016-12-27T04:59:42+00:00",
+    "abatementDateTime": "2017-01-03T04:59:42+00:00",
+    "recordedDate": "2016-12-27T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/739de1a7-73ae-45fb-bad9-c98e2a215a64",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "739de1a7-73ae-45fb-bad9-c98e2a215a64",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:04:52.704-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "195662009",
+       "display": "Acute viral pharyngitis (disorder)"
+      }
+     ],
+     "text": "Acute viral pharyngitis (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/416f6da5-858e-410a-a675-0776e19f421b"
+    },
+    "onsetDateTime": "2011-11-15T04:59:42+00:00",
+    "abatementDateTime": "2011-11-26T04:59:42+00:00",
+    "recordedDate": "2011-11-15T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/e169ff13-c04a-4314-a5a1-a76a9a54267e",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "e169ff13-c04a-4314-a5a1-a76a9a54267e",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:46.371-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "444814009",
+       "display": "Viral sinusitis (disorder)"
+      }
+     ],
+     "text": "Viral sinusitis (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/f92d351e-b508-4dbe-aed3-21d7ed927c4a"
+    },
+    "onsetDateTime": "2011-10-17T04:59:42+00:00",
+    "abatementDateTime": "2011-10-31T04:59:42+00:00",
+    "recordedDate": "2011-10-17T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/06b51354-94e8-49b7-9c31-7ad296e8461c",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "06b51354-94e8-49b7-9c31-7ad296e8461c",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:44.243-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "10509002",
+       "display": "Acute bronchitis (disorder)"
+      }
+     ],
+     "text": "Acute bronchitis (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/475dd7d3-cd5b-48ef-81a5-ef08ccd79258"
+    },
+    "onsetDateTime": "2013-02-03T04:59:42+00:00",
+    "abatementDateTime": "2013-02-10T04:59:42+00:00",
+    "recordedDate": "2013-02-03T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/59897ae1-99a5-40cf-81f5-9a6010a24cb1",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "59897ae1-99a5-40cf-81f5-9a6010a24cb1",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:01:55.182-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "444814009",
+       "display": "Viral sinusitis (disorder)"
+      }
+     ],
+     "text": "Viral sinusitis (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/1858048d-edf7-44fb-996e-1d68390b7259"
+    },
+    "onsetDateTime": "2015-05-21T04:59:42+00:00",
+    "abatementDateTime": "2015-05-28T04:59:42+00:00",
+    "recordedDate": "2015-05-21T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/63c442fe-abbd-4db8-bc80-eefbf15d1f83",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "63c442fe-abbd-4db8-bc80-eefbf15d1f83",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:01:10.295-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "15777000",
+       "display": "Prediabetes"
+      }
+     ],
+     "text": "Prediabetes"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/541c324a-811b-48a1-8f8e-2ec8908ad820"
+    },
+    "onsetDateTime": "2006-01-01T04:59:42+00:00",
+    "recordedDate": "2006-01-01T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/cb9c44a7-f9cb-4ba4-9b5c-d39dd714404a",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "cb9c44a7-f9cb-4ba4-9b5c-d39dd714404a",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:58.682-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "38341003",
+       "display": "Hypertension"
+      }
+     ],
+     "text": "Hypertension"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/dd51fdd1-a117-40ce-b9e4-ad3ddd416290"
+    },
+    "onsetDateTime": "1971-03-07T04:59:42+00:00",
+    "recordedDate": "1971-03-07T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/0b9a10d1-1165-4829-aff6-11b7c92a42f7",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "0b9a10d1-1165-4829-aff6-11b7c92a42f7",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:00:44.895-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "283385000",
+       "display": "Laceration of thigh"
+      }
+     ],
+     "text": "Laceration of thigh"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/cd83d250-41e1-4470-abba-ff4359f47e31"
+    },
+    "onsetDateTime": "2015-01-17T04:59:42+00:00",
+    "abatementDateTime": "2015-02-07T04:59:42+00:00",
+    "recordedDate": "2015-01-17T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/e21522b1-8006-4723-8b8d-bda8a575b87e",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "e21522b1-8006-4723-8b8d-bda8a575b87e",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:44.402-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "55822004",
+       "display": "Hyperlipidemia"
+      }
+     ],
+     "text": "Hyperlipidemia"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/541c324a-811b-48a1-8f8e-2ec8908ad820"
+    },
+    "onsetDateTime": "2005-12-29T04:59:42+00:00",
+    "recordedDate": "2005-12-29T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/1f3f4844-f0d2-4b8f-ae92-2ef8008b50c4",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "1f3f4844-f0d2-4b8f-ae92-2ef8008b50c4",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:58:50.909-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "resolved"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "58150001",
+       "display": "Fracture of clavicle"
+      }
+     ],
+     "text": "Fracture of clavicle"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/b2724a4b-e401-46bd-a17a-77bc06c107bc"
+    },
+    "onsetDateTime": "2020-04-11T04:59:42+00:00",
+    "abatementDateTime": "2020-05-11T04:59:42+00:00",
+    "recordedDate": "2020-04-11T04:59:42+00:00"
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Condition/63fe877d-8af7-4aab-8817-5df1606653f5",
+   "resource": {
+    "resourceType": "Condition",
+    "id": "63fe877d-8af7-4aab-8817-5df1606653f5",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:57:48.763-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "verificationStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+       "code": "confirmed"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "271737000",
+       "display": "Anemia (disorder)"
+      }
+     ],
+     "text": "Anemia (disorder)"
+    },
+    "subject": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/57df0407-ef05-4f5d-beb2-6eb7006aa68b"
+    },
+    "onsetDateTime": "2007-01-07T04:59:42+00:00",
+    "recordedDate": "2007-01-07T04:59:42+00:00"
+   }
+  }
+ ]
+}

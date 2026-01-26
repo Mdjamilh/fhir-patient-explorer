@@ -1,0 +1,475 @@
+{
+ "resourceType": "Bundle",
+ "type": "searchset",
+ "total": 13,
+ "entry": [
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/2b8aa0f6-70d5-40c3-bf0c-f4ca1a357aec",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "2b8aa0f6-70d5-40c3-bf0c-f4ca1a357aec",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:11:06.112-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/efff9577-6528-425b-b6fe-ffa8c5afd098"
+    },
+    "occurrenceDateTime": "2014-02-16T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/65df42d1-57de-4b03-b677-e238ebcace71",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "65df42d1-57de-4b03-b677-e238ebcace71",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:11:05.807-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/d6adf3b6-fa53-4dda-b304-d3732336bda7"
+    },
+    "occurrenceDateTime": "2020-03-22T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/f04097bd-311b-43ef-b0c9-68bdb68c9425",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "f04097bd-311b-43ef-b0c9-68bdb68c9425",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:09:58.121-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/5f33c5e3-8aef-4808-9f9a-57d0a67a9e5d"
+    },
+    "occurrenceDateTime": "2013-02-10T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/2a4a038f-e33a-44d0-b717-44d53edc382d",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "2a4a038f-e33a-44d0-b717-44d53edc382d",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:06:34.054-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/93530d4a-8b95-4835-bb67-104699db1a0b"
+    },
+    "occurrenceDateTime": "2012-02-05T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/b4806707-8d0a-4c29-9ba6-9a4c5af4022a",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "b4806707-8d0a-4c29-9ba6-9a4c5af4022a",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:06:10.402-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/59fd6715-4035-4ff8-839b-df0ba46e40e9"
+    },
+    "occurrenceDateTime": "2021-03-28T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/555a6a9e-e156-45c0-8d63-b0319346fdb2",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "555a6a9e-e156-45c0-8d63-b0319346fdb2",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:05:28.064-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "113",
+       "display": "Td (adult) preservative free"
+      }
+     ],
+     "text": "Td (adult) preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/efff9577-6528-425b-b6fe-ffa8c5afd098"
+    },
+    "occurrenceDateTime": "2014-02-16T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/d02fda27-e191-4d26-9e21-7b96b1ef914f",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "d02fda27-e191-4d26-9e21-7b96b1ef914f",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:04:37.842-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/6122fe77-3b55-4250-bdb6-b39f2d67851e"
+    },
+    "occurrenceDateTime": "2015-02-22T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/3202f089-8c02-417b-b8a9-c8047ed81c9b",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "3202f089-8c02-417b-b8a9-c8047ed81c9b",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:04:18.287-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/ed62f128-4b37-4547-abef-c5957b73094c"
+    },
+    "occurrenceDateTime": "2017-03-05T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/613ab7ce-04c4-457f-94e3-b36a211a1620",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "613ab7ce-04c4-457f-94e3-b36a211a1620",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:29.036-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/4fcbbc87-b05e-47d1-8874-fd3c4b5e55ae"
+    },
+    "occurrenceDateTime": "2016-02-28T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/7dd0d204-aab6-4247-95ea-627aedeb94ab",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "7dd0d204-aab6-4247-95ea-627aedeb94ab",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:03:16.266-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/7b9f0f91-afc4-4d4b-b23c-a56ac37e2b01"
+    },
+    "occurrenceDateTime": "2018-03-11T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/0d4cb785-7dfe-4df0-96c0-b2860b7a7d89",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "0d4cb785-7dfe-4df0-96c0-b2860b7a7d89",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:01:33.937-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "140",
+       "display": "Influenza, seasonal, injectable, preservative free"
+      }
+     ],
+     "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/e7b240b4-b86c-4728-8d94-7e8b2b50b3cd"
+    },
+    "occurrenceDateTime": "2019-03-17T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/95cf8d4a-4ed1-4933-83d1-9c9d23e892eb",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "95cf8d4a-4ed1-4933-83d1-9c9d23e892eb",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T03:01:11.832-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "33",
+       "display": "pneumococcal polysaccharide vaccine, 23 valent"
+      }
+     ],
+     "text": "pneumococcal polysaccharide vaccine, 23 valent"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/e7b240b4-b86c-4728-8d94-7e8b2b50b3cd"
+    },
+    "occurrenceDateTime": "2019-03-17T04:59:42+00:00",
+    "primarySource": true
+   }
+  },
+  {
+   "fullUrl": "https://r4.smarthealthit.org/Immunization/85138c55-60af-4b4a-a355-18e0c4ba9d23",
+   "resource": {
+    "resourceType": "Immunization",
+    "id": "85138c55-60af-4b4a-a355-18e0c4ba9d23",
+    "meta": {
+     "versionId": "4",
+     "lastUpdated": "2021-04-07T02:59:09.478-04:00",
+     "tag": [
+      {
+       "system": "https://smarthealthit.org/tags",
+       "code": "synthea-5-2019"
+      }
+     ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/cvx",
+       "code": "133",
+       "display": "Pneumococcal conjugate PCV 13"
+      }
+     ],
+     "text": "Pneumococcal conjugate PCV 13"
+    },
+    "patient": {
+     "reference": "Patient/618b2992-eec7-45c9-8544-12c9f586b78c"
+    },
+    "encounter": {
+     "reference": "Encounter/7b9f0f91-afc4-4d4b-b23c-a56ac37e2b01"
+    },
+    "occurrenceDateTime": "2018-03-11T04:59:42+00:00",
+    "primarySource": true
+   }
+  }
+ ]
+}
