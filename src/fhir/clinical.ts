@@ -114,3 +114,23 @@ export function exportBundle(baseUrl: string, resources: FhirResource[], now = n
   });
   return { resourceType: "Bundle", type: "collection", timestamp: now.toISOString(), entry };
 }
+
+export type PrescriptionGroup = { name: string; count: number; first?: string; last?: string; latest: MedicationRequest };
+
+/**
+ * Repeat prescriptions of the same medication collapsed into one row, so a
+ * statin renewed every year reads as one line rather than twenty.
+ */
+export function groupPrescriptions(meds: MedicationRequest[]): PrescriptionGroup[] {
+  const groups = new Map<string, MedicationRequest[]>();
+  for (const m of meds) {
+    const name = medicationName(m);
+    groups.set(name, [...(groups.get(name) ?? []), m]);
+  }
+  return [...groups.entries()]
+    .map(([name, items]) => {
+      const sorted = [...items].sort(newestFirst((m) => m.authoredOn));
+      return { name, count: items.length, first: sorted.at(-1)?.authoredOn, last: sorted[0]?.authoredOn, latest: sorted[0]! };
+    })
+    .sort(newestFirst((g) => g.last));
+}

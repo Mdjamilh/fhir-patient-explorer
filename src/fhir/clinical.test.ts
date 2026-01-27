@@ -1,7 +1,16 @@
 import type { Condition, Encounter, MedicationRequest, Patient, Procedure } from "fhir/r4";
 import { describe, expect, it } from "vitest";
 
-import { activeAllergies, encounterClass, exportBundle, medicationName, sortConditions, sortMedications, visitTimeline } from "./clinical";
+import {
+  activeAllergies,
+  encounterClass,
+  exportBundle,
+  groupPrescriptions,
+  medicationName,
+  sortConditions,
+  sortMedications,
+  visitTimeline,
+} from "./clinical";
 
 const condition = (id: string, status: string, onset: string, verification?: string): Condition => ({
   resourceType: "Condition",
@@ -40,6 +49,20 @@ describe("medications", () => {
     expect(medicationName(med("a", "active", "2020", { medicationCodeableConcept: { text: "Lisinopril 10 MG" } }))).toBe("Lisinopril 10 MG");
     expect(medicationName(med("b", "active", "2020", { medicationReference: { display: "Metformin" } }))).toBe("Metformin");
     expect(medicationName(med("c", "active", "2020"))).toBe("Unknown medication");
+  });
+
+  it("groups repeat prescriptions of the same medication", () => {
+    const statin = { medicationCodeableConcept: { text: "Simvastatin 10 MG" } };
+    const groups = groupPrescriptions([
+      med("s1", "stopped", "2019-01-01", statin),
+      med("a1", "stopped", "2015-06-01", { medicationCodeableConcept: { text: "Amoxicillin" } }),
+      med("s2", "stopped", "2021-01-01", statin),
+      med("s3", "stopped", "2017-01-01", statin),
+    ]);
+    expect(groups.map((g) => [g.name, g.count, g.first, g.last, g.latest.id])).toEqual([
+      ["Simvastatin 10 MG", 3, "2017-01-01", "2021-01-01", "s2"],
+      ["Amoxicillin", 1, "2015-06-01", "2015-06-01", "a1"],
+    ]);
   });
 
   it("puts active and on-hold prescriptions first", () => {
