@@ -5,7 +5,7 @@ import { Badge, DataTable, type Column, type Tone } from "../../components/DataT
 import { QueryView, TruncatedNote } from "../../components/QueryView";
 import { Empty } from "../../components/States";
 import { useMedications } from "../../data/queries";
-import { medicationName, sortMedications } from "../../fhir/clinical";
+import { groupPrescriptions, medicationName, sortMedications, type PrescriptionGroup } from "../../fhir/clinical";
 import { capitalize, codeableText, formatDate } from "../../fhir/format";
 import styles from "./Patient.module.css";
 
@@ -19,12 +19,20 @@ const columns: Column<MedicationRequest>[] = [
   { header: "Prescribed", cell: (m) => formatDate(m.authoredOn), nowrap: true },
 ];
 
+const pastColumns: Column<PrescriptionGroup>[] = [
+  { header: "Medication", cell: (g) => g.name },
+  { header: "Prescribed", cell: (g) => (g.count === 1 ? "Once" : `${g.count} times`), nowrap: true },
+  { header: "Period", cell: (g) => (g.count === 1 ? formatDate(g.last) : `${formatDate(g.first)} – ${formatDate(g.last)}`), nowrap: true },
+  { header: "Last status", cell: (g) => <Badge tone={TONE[g.latest.status]}>{capitalize(g.latest.status)}</Badge> },
+];
+
 export function MedicationsTab() {
   const { id = "" } = useParams();
   return (
     <QueryView query={useMedications(id)} label="medications">
       {({ resources, truncated }) => {
         const { active, past } = sortMedications(resources);
+        const previous = groupPrescriptions(past);
         if (!active.length && !past.length) return <Empty>No medications recorded.</Empty>;
         return (
           <>
@@ -35,8 +43,8 @@ export function MedicationsTab() {
             </section>
             {past.length > 0 && (
               <section className={styles.section}>
-                <h2 className={styles.sectionTitle}>Previous ({past.length})</h2>
-                <DataTable rows={past} columns={columns} rowKey={(m) => m.id!} />
+                <h2 className={styles.sectionTitle}>Previous ({previous.length})</h2>
+                <DataTable rows={previous} columns={pastColumns} rowKey={(g) => g.name} />
               </section>
             )}
           </>
