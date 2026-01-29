@@ -1,0 +1,26 @@
+name: Sandbox drift
+
+# The browser tests use recorded responses. Once a week, re-record them from
+# the live SMART sandbox and report if the data the tests rely on has changed.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+      - run: node scripts/record-fixtures.mjs
+      - name: Compare with committed fixtures
+        run: |
+          if git diff --quiet -- e2e/fixtures; then
+            echo "Fixtures match the live sandbox."
+          else
+            git diff --stat -- e2e/fixtures
+            echo "::warning::The SMART sandbox data changed. Run 'npm run fixtures' and review the e2e tests."
+          fi
