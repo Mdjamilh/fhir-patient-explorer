@@ -28,7 +28,7 @@ export function TrendChart({ series }: { series: Series }) {
           contentStyle={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 8 }}
         />
         <Line
-          type="monotone"
+          type="linear"
           dataKey="value"
           stroke="var(--accent)"
           strokeWidth={2}
